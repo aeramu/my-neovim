@@ -27,7 +27,7 @@ vim.keymap.set('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Terminal: Move to le
 vim.keymap.set('t', '<C-j>', '<C-\\><C-n><C-w>j', { desc = 'Terminal: Move to window below' })
 vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w>k', { desc = 'Terminal: Move to window above' })
 vim.keymap.set('t', '<C-l>', '<C-\\><C-n><C-w>l', { desc = 'Terminal: Move to right window' })
-vim.keymap.set('t', '<C-\\><C-\\>', '<C-\\><C-n>', { desc = 'Terminal: Exit to normal mode' })
+vim.keymap.set('t', '<C-n>', '<C-\\><C-n>', { desc = 'Terminal: Exit to normal mode' })
 
 -- VISUAL MODE
 -- edit
