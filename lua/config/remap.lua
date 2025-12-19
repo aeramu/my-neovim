@@ -16,10 +16,14 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- buffer
 vim.keymap.set('n', '<leader>bp', '<cmd>bp<CR>', { desc = 'Go to previous buffer' })
 vim.keymap.set('n', '<leader>bn', '<cmd>bn<CR>', { desc = 'Go to previous buffer' })
-vim.keymap.set('n', '<leader>bd', '<cmd>bn<CR><cmd>bd#<CR>', { desc = 'delete current buffer' })
+vim.keymap.set('n', '<leader>bd', '<cmd>bn<CR><cmd>bd#<CR><cmd>bp<CR>', { desc = 'delete current buffer' })
 
 -- mode
 vim.keymap.set('n', '<Tab>', 'i<Tab>', { desc = 'Insert Tab' })
+
+-- other
+vim.keymap.set('n', '<leader>y', '"+y', { desc = 'Copy selection to clipboard' })
+vim.keymap.set('n', '<leader>p', '"+p', { desc = 'Paste from clipboard' })
 
 -- TERMINAL MODE
 -- navigation
@@ -33,3 +37,4 @@ vim.keymap.set('t', '<C-n>', '<C-\\><C-n>', { desc = 'Terminal: Exit to normal m
 -- edit
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+vim.keymap.set('v', '<leader>y', '"+y', { desc = 'Copy selection to clipboard' })

@@ -8,12 +8,12 @@ vim.api.nvim_create_autocmd({"FocusGained", "BufEnter", "CursorHold"}, {
   end,
 })
 
--- Auto toggle opencode on startup
-vim.schedule(function()
-  local prev_buf = vim.api.nvim_get_current_buf()
-  require('opencode').toggle()
-  -- Go back to previous buffer after toggle
-  vim.schedule(function()
-    vim.api.nvim_set_current_buf(prev_buf)
-  end)
-end)
+-- -- Auto toggle opencode on startup
+-- vim.schedule(function()
+  -- local prev_buf = vim.api.nvim_get_current_buf()
+  -- require('opencode').toggle()
+  -- -- Go back to previous buffer after toggle
+  -- vim.schedule(function()
+    -- vim.api.nvim_set_current_buf(prev_buf)
+  -- end)
+-- end)
